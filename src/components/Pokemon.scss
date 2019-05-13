@@ -1,0 +1,23 @@
+.card {
+  width: 180px;
+  height: 250px;
+  border: 1px solid lightgrey;
+  border-radius: 5px;
+  margin: 8px;
+  text-align: center;
+
+  &__footer {
+    display: flex;
+    flex-direction: row;
+    
+    &--type {
+      margin-left: 15px;
+      padding: 6px 10px;
+      background-color: grey;
+      border-radius: 20px;
+      color: white;
+      font-weight: 700;
+      font-size: 12px;
+    }
+  }
+}

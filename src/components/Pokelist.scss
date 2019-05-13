@@ -1,0 +1,15 @@
+.pokemon {
+  &__list {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+
+  &__item {
+    list-style: none;
+  }
+}
