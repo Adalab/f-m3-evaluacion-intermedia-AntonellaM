@@ -1,11 +1,17 @@
 .card {
   width: 180px;
-  height: 250px;
+  height: 235px;
   border: 1px solid lightgrey;
   border-radius: 5px;
   margin: 8px;
   text-align: center;
   position: relative;
+
+  &__title {
+    text-transform: capitalize;
+    border-top: 1px solid lightgrey;
+    padding-top: 15px;
+  }
 
   &__favorite {
     color: lightgrey;
@@ -24,6 +30,7 @@
   &__footer {
     display: flex;
     flex-direction: row;
+    border-top: 1px solid lightgrey;
     
     &--type {
       margin-left: 15px;
