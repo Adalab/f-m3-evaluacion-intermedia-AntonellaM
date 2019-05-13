@@ -10,7 +10,7 @@ class PokeList extends Component {
       <ul className="pokemon__list">
         {data.map(item => {
           return (
-            <li className="pokemon__item" key={item.id} id={item.id}>
+            <li className="pokemon__item" key={`p${item.id}`} id={item.id}>
               <Pokemon url={item.url} name={item.name} types={item.types} />
             </li>
           );
