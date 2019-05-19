@@ -7,24 +7,16 @@ class App extends Component {
 
   constructor(props) {
     super(props);
-    this.getPokemons = this.getPokemons.bind(this);
-    this.getPokemons();
     this.state = {
-      pokemons : [],
+      pokemons : pokemon,
     }
-  }
-
-  getPokemons() {
-    this.setState({
-      pokemons: { pokemon },
-    })
   }
 
   render() {
     return (
       <React.Fragment>
         <h1 className="page__title">Mi lista de Pokemon</h1>
-        <PokeList data={pokemon} />
+        <PokeList data={this.state.pokemons} />
       </React.Fragment>
     );
   }
