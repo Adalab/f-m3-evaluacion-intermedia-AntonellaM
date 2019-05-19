@@ -16,16 +16,17 @@ class App extends Component {
   setFavorite(event) {
     const name = event.currentTarget.getAttribute('name');
     const ind = this.state.pokemons.findIndex(pokemon => pokemon.name === name);
-    console.log(this.state.pokemons[ind].favorite)
-
+    const updatedPokemon={...this.state.pokemons[ind], favorite:!this.state.pokemons[ind].favorite}
+ 
     this.setState(prevState => {
+      let newArr= [
+        ...prevState.pokemons,
+      ];
+      newArr[ind]=updatedPokemon;
       return {
-        pokemons: {
-          ...prevState.pokemons,
-          [prevState.pokemons[ind].favorite]: (prevState.pokemons[ind].favorite === true) ? false : true,
-        }
+        pokemons: newArr
       }
-    });    
+    });
   }
 
   render() {

@@ -7,6 +7,10 @@
   text-align: center;
   position: relative;
 
+  &--selected {
+    border: 2px solid red;
+  }
+
   &__title {
     text-transform: capitalize;
     border-top: 1px solid lightgrey;
@@ -30,7 +34,9 @@
   &__footer {
     display: flex;
     flex-direction: row;
+    align-items: center;
     border-top: 1px solid lightgrey;
+    padding: 10px 0;
     
     &--type {
       margin-left: 15px;

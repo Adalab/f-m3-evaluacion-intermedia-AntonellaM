@@ -34,8 +34,9 @@ class Pokemon extends Component {
       setFavorite
     } = this.props;
     const selectedClass = favorite ? 'card__favorite--selected' : 'card__favorite';
+    const selectedCard = favorite ? 'card--selected' : '';
     return (
-      <div name={name} className="card">
+      <div name={name} className={`card ${selectedCard}`}>
         <FontAwesomeIcon 
           onClick={setFavorite}
           className={selectedClass}
@@ -44,8 +45,8 @@ class Pokemon extends Component {
         />
         <img className="card__image" src={url} alt={name}/>
         <h2 className="card__title">{name}</h2>
-        <div className="card__footer">
-          <ul>
+        <div>
+          <ul className="card__footer">
             {types.map((type, index) => {
               return <li key={index} className="card__footer--type">{type.toUpperCase()}</li>;
             })}
