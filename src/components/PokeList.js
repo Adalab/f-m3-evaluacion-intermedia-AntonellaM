@@ -6,13 +6,21 @@ import './Pokelist.scss'
 
 class PokeList extends Component {
   render() {
-    const {data} = this.props;
+    const {
+      data,
+      setFavorite} = this.props;
     return (
       <ul className="pokemon__list">
         {data.map(item => {
           return (
             <li className="pokemon__item" key={`p${item.id}`} id={item.id}>
-              <Pokemon url={item.url} name={item.name} types={item.types} />
+              <Pokemon
+                url={item.url}
+                name={item.name}
+                types={item.types}
+                favorite={item.favorite}
+                setFavorite={setFavorite}
+              />
             </li>
           );
         })}

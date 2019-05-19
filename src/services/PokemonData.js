@@ -60,4 +60,8 @@ const pokemon = [
 
 ];
 
-export { pokemon };
+const pokemonData = pokemon.map(item => {
+  return {...item, favorite: false}
+});
+
+export { pokemonData };
