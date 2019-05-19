@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
+import PokeList from './PokeList';
 import './App.scss';
-import PokeList from './PokeList'
+
 
 const pokemon = [
 
