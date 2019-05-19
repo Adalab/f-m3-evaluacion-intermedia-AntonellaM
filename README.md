@@ -1,3 +1,11 @@
+This is an exercise done using React, in which we show a list of Pokemon comin from a given array using:
+
+  - ES6
+  - Props
+  - PropTypes
+  
+In order to initialize it, you can follow React instructions below:
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
